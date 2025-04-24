@@ -49,9 +49,8 @@ export default defineConfig([
 [1, 2, 3]
   .map((x) => x + 1)
   .filter((x) => x > 2)
-  .reduce((a, b) => a + b, 0)
-  .sort()
-  .slice(0, 5);
+  .toReversed()
+  .slice(0, 2);
 ```
 
 ### Using Iterator Helpers (no warning)

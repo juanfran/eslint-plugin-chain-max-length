@@ -26,7 +26,7 @@ export default defineConfig([
       chainMaxLengthPlugin,
     },
     rules: {
-      'chainMaxLengthPlugin/chain-max-length': 'warn',
+      'chainMaxLengthPlugin/chain-max-length': ['warn', 3],
     },
   },
 ]);
@@ -37,7 +37,7 @@ export default defineConfig([
 - **Type**: `suggestion`
 - **Options**: An integer (minimum 1) representing the maximum number of standard array methods allowed in a single chain.
 - **Checked methods**:
-  - `map`, `filter`, `reduce`, `reduceRight`, `forEach`, `some`, `every`, `find`, `findIndex`, `flatMap`, `sort`, `slice`, `concat`
+  - `map`, `filter`, `reduce`, `reduceRight`, `flat`, `flatMap`, `slice`, `concat`, `toSorted`, `toReversed`, `toSpliced`.
 - **Exception**: Chains starting with `.values()` and ending with `.toArray()` (lazy pipelines) are ignored.
 
 ### Examples

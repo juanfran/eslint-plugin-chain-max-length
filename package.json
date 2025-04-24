@@ -1,9 +1,14 @@
 {
   "name": "eslint-plugin-chain-max-length",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "packageManager": "pnpm@9.6.0",
   "description": "Eslint plugin to enforce a maximum length for chained array methods.",
+  "homepage": "https://github.com/juanfran/eslint-plugin-chain-max-length",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanfran/eslint-plugin-chain-max-length.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
@@ -15,7 +20,7 @@
     "array-chain-max-length"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "prettier": "3.5.3",
     "eslint": "^9.0.0"

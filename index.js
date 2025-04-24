@@ -44,7 +44,7 @@ export const maxChainRule = {
     },
   },
   create(context) {
-    const sourceCode = context.sourceCode ?? context.getSourceCode();
+    // const sourceCode = context.sourceCode ?? context.getSourceCode();
 
     const max = context.options[0] ?? 1;
     function getChainMethods(node) {
